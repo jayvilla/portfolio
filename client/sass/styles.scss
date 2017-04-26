@@ -1,3 +1,68 @@
+@import '../../node_modules/bourbon-neat/core/neat';
+
+
+/* Bourbon Neat Config */
+$collapse: (
+  columns: 12,
+  gutter: 0px,
+  direction: ltr,
+);
+
+.l-row {
+  @include grid-container($collapse);
+}
+
+.l-col-1 {
+  @include grid-column(1, $collapse);
+}
+
+.l-col-4 {
+  @include grid-column(4, $collapse);
+}
+
+.l-col-5 {
+  @include grid-column(5, $collapse);
+}
+
+.l-col-2 {
+  @include grid-column(2, $collapse);
+}
+
+.l-col-3 {
+  @include grid-column(3, $collapse);
+}
+
+.l-col-6 {
+  @include grid-column(6, $collapse);
+}
+
+.l-col-7 {
+  @include grid-column(7, $collapse);
+}
+
+.l-col-8 {
+  @include grid-column(8, $collapse);
+}
+
+.l-col-9 {
+  @include grid-column(9, $collapse);
+}
+
+.l-col-10 {
+  @include grid-column(10, $collapse);
+}
+
+* {
+	box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  height: 100%;
+  font-family: 'avenir', 'helvetica';
+}
+
+/* Navigation */
 .navigation {
   background-color: #282828;
   text-align: center;
@@ -19,19 +84,54 @@
     }
   }
 }
-
+/* Profile */
 .profile {
+  height: 585px;
+  border: 2px solid red;
 
-}
+  .profile-picture {
+    height: 100%;
+    border: 2px solid green;
 
-.work {
+    img {
+      height: 285px;
+      width: 285px;
+      margin-top: 185px;
+      margin-left: 500px;
+      border-radius: 50%;
+      overflow: hidden;
+    }
+  }
 
-}
+  .profile-info {
+    height: 100%;
+    border: 2px solid green;
 
-.resume {
+    .intro {
+      padding-left: 25px;
+      padding-top: 210px;
+      font-size: 3.25em;
+      letter-spacing: -0.025em;
 
-}
+    }
 
-.contact {
+    .description {
+      padding-left: 25px;
+      padding-top: 20px;
+      font-size: 1.5em;
+    }
 
+    button {
+      color: #FFF;
+      font-size: 1.2em;
+      letter-spacing: 0.0125em;
+      margin-left: 25px;
+      margin-top: 25px;
+      height: 65px;
+      width: 394px;
+      text-shadow: -1px -1px 0.5px rgba(0, 0, 0, 0.5);
+      border-radius: 15px;
+      background-color: #43B3E0;
+    }
+  }
 }
