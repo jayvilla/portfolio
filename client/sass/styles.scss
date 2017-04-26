@@ -130,7 +130,66 @@ html, body {
       height: 65px;
       width: 394px;
       text-shadow: -1px -1px 0.5px rgba(0, 0, 0, 0.5);
-      border-radius: 15px;
+      border-radius: 10px;
+      background-color: #43B3E0;
+    }
+  }
+}
+/* Work */
+.work {
+  background-color: #FAFAFA;
+  text-shadow: 1px 1px 0px #FFF;
+  height: 880px;
+  border: 2px solid black;
+  text-align: center;
+
+  .header {
+    padding-top: 120px;
+
+    .title {
+      font-weight: bold;
+      font-size: 2em;
+      letter-spacing: 0.025em;
+    }
+
+    .description {
+      padding-top: 15px;
+      padding-bottom: 50px;
+    }
+  }
+
+  .gallery {
+    margin-top: 50px;
+    width: 50.78%;
+    margin: 0 auto;
+    border: 2px solid pink;
+
+    .gallery-item {
+      height: 325px;
+      width: 325px;
+      margin-left: 10px;
+      margin-right: 10px;
+      border: 2px solid blue;
+    }
+  }
+
+  .footer {
+    padding-top: 30px;
+
+    p {
+      font-size: 1.25em;
+    }
+
+    button {
+      color: #FFF;
+      font-size: 1.2em;
+      letter-spacing: 0.0125em;
+      margin-left: 25px;
+      margin-top: 25px;
+      height: 65px;
+      width: 394px;
+      text-shadow: -1px -1px 0.5px rgba(0, 0, 0, 0.5);
+      border-radius: 10px;
       background-color: #43B3E0;
     }
   }
