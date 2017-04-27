@@ -7,7 +7,9 @@ export default class GalleryItem extends React.Component {
   render() {
     return (
       <div className='l-col-2 gallery-item'>
-        <h1>heyyyy</h1>
+        <div className='picture'>Picture of skills</div>
+        <h3>Name of Skill</h3>
+        <p>Brief description of skill</p>
       </div>
     );
   }

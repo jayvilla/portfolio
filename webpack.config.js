@@ -23,12 +23,26 @@ module.exports = {
   entry: './client/index.js',
   output: {
     path: path.resolve('dist'),
-    filename: 'bundle.js'
+    filename: 'bundle.js',
   },
   module: {
     loaders: [
       { test: /\.js?/, loader: 'babel-loader', exclude: /node_modules/ },
-      { test: /\.scss$/, loader: ExtractTextPlugin.extract('css-loader!sass-loader') }
+      { test: /\.scss$/, loader: ExtractTextPlugin.extract('css-loader!sass-loader') },
+      {
+          test: /\.(png|jpg|jpeg|gif|woff)$/,
+          loader: 'file-loader',
+          options: {
+            name: '[path][name].[hash].[ext]',
+          },
+      },
+      {
+        test: /\.(png|jpg|jpeg|gif|woff)$/,
+        loader: 'url-loader',
+        options: {
+          limit: 25000,
+        },
+      },
     ]
   },
   plugins: [HtmlWebpackPluginConfig, SassPlugin, new webpack.HotModuleReplacementPlugin()] // add ProcessEnvPlugin if not working

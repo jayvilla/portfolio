@@ -112,7 +112,6 @@ html, body {
       padding-top: 210px;
       font-size: 3.25em;
       letter-spacing: -0.025em;
-
     }
 
     .description {
@@ -137,11 +136,12 @@ html, body {
 }
 /* Work */
 .work {
-  background-color: #FAFAFA;
+  background: url('http://i190.photobucket.com/albums/z14/Wangdadadangdang/bg.png');
   text-shadow: 1px 1px 0px #FFF;
   height: 880px;
   border: 2px solid black;
   text-align: center;
+
 
   .header {
     padding-top: 120px;
@@ -165,11 +165,20 @@ html, body {
     border: 2px solid pink;
 
     .gallery-item {
+      background-color: #FFF;
       height: 325px;
       width: 325px;
       margin-left: 10px;
       margin-right: 10px;
       border: 2px solid blue;
+
+      .picture {
+        height: 150px;
+        width: 150px;
+        margin-top: 5px;
+        margin: 0 auto;
+        border: 2px solid black;
+      }
     }
   }
 
