@@ -3,6 +3,7 @@ import Navigation from './Navigation.jsx'
 import Profile from './Profile.jsx'
 import Work from './Work.jsx'
 import Portfolio from './Portfolio.jsx'
+import Contact from './Contact.jsx'
 import '../sass/styles.scss'
 
 export default class App extends React.Component {
@@ -14,6 +15,7 @@ export default class App extends React.Component {
         <Profile />
         <Work />
         <Portfolio />
+        <Contact />
       </div>
     )
   }
