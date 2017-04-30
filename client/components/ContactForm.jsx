@@ -23,7 +23,7 @@ export default class ContactForm extends React.Component {
           <div className='l-col-12'>
             <ul className='actions'>
               <li><input type="submit" value="Send Message" /></li>
-							<li><input type="reset" value="Clear Form" class="alt" /></li>
+							<li><input type="reset" value="Clear Form" className="alt" /></li>
             </ul>
           </div>
         </form>
